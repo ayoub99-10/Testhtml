@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <style>
+    /* --- RESET --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* --- BODY --- */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      color: #fff;
+    }
+
+    /* --- CONTAINER --- */
+    .welcome-container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    /* --- TITLE --- */
+    h1 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    /* --- TEXT --- */
+    p {
+      font-size: 1em;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+
+    /* --- BUTTON --- */
+    .btn {
+      text-decoration: none;
+      background: #fff;
+      color: #5563DE;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #5563DE;
+      color: #fff;
+      box-shadow: 0 0 10px #fff;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.6em;
+      }
+      p {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1>Welcome to Inschool 👋</h1>
+    <p>Your smart way to manage everything about school life easily.</p>
+    <a href="login.html" class="btn">Get Started</a>
+  </div>
+</body>
+</html>
